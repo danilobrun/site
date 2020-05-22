@@ -1,0 +1,58 @@
+/* General page styles */
+body {
+  background-image: url('http://www.vanessametonini.com.br/imersaocss/a1/img/fundo.jpg');
+  background-size: auto 100vh; /* fisrt value horizontal e second vertical view high usa 100% */
+  font-family: Arial;
+  height: 100vh; /* ele escala de acordo com a tela */
+/* background can be used to changes color your site
+you can use hexadecimal codes for changes colors */ 
+}
+
+/* Class styles clalled "menu" */
+.menu {
+  background-color: white;
+}
+
+/* na classe menu forcamos as li ficaram em modo coluna uma ao lado da outra
+para isso usamos a propriedade abaixo no display, porque aplicanos na UL nao direto na LI, a UL carrega
+todos os elementos de LI que por padrao deixa vertical desse modo usamos a propriedade justify para justifcar o texto.
+tudo que é propriedade esta a esquerda da virgula, algumas propriedades só funcionam em conjunto com outras 
+no caso desse exemplo uma tem dependencia da outra.
+apos o : tudo a direita é o valor que vc dara a essa propriedade */
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* se le da direta para esquerda, todas as li serão atingidas 
+ques estao definidas pela classe menu, removemos os pontos . no nav */
+.menu li {
+ list-style: none; 
+}
+
+a {
+  color: teal;
+  text-decoration: none;
+}
+
+/* pseudo classe do elemento a */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Aqui nossa 3 classes que demos os nomes abaixo que sao do h1, h2 e h3 inserimos uma cor
+e centralizamos, observe que realizamos a alteracao em 3 headers seguidos ou seja modificamos 3 classes 
+com os mesmo valores bota inserir , apos das classe para adicionar outra a ser modificada, podemos tambem abrir novamente
+só a modificacao exclusiva de uma classe o caso abaixo */
+.site-subtitle2,
+.site-subtitle3, 
+.site-title {
+  color: whitesmoke;
+  text-align: center;
+}
+
+/* aqui só modificamos para italico as classes do h2 e h3 */
+.site-subtitle2,
+.site-subtitle3 {
+ font-style: italic;
+}
